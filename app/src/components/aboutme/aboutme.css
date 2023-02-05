@@ -1,0 +1,71 @@
+.aboutme {
+  display: flex;
+  height: 75vh;
+  margin-top: 5rem;
+}
+
+.aboutme-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+}
+
+.aboutme-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme-name > :nth-child(1) {
+  color: var(--ocean);
+  font-weight: bolder;
+  font-size: 4rem;
+  margin-left: 3rem;
+}
+
+.aboutme-name > :nth-child(2) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+
+.aboutme-name > :nth-child(3) {
+  color: var(--gray);
+  font-weight: normal;
+  font-size: 1rem;
+  margin-left: 3rem;
+  margin-top: 0.3rem;
+}
+
+.aboutme-socials {
+  flex: 8;
+  font-size: 0.25rem;
+}
+
+.aboutme-socials > ul {
+  display: flex;
+  margin-right: 5rem;
+  list-style-type: none;
+  font-size: 0.25rem;
+}
+
+.aboutme-button {
+  width: 2.5rem;
+  height: 1rem;
+  font-size: 0.75rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.aboutme-right {
+  position: relative;
+  flex: 1;
+}
+
+.aboutme-right>*{
+    position: absolute;
+    z-index: 1;
+    transform: scale(1.2);
+    left: 24%
+}
