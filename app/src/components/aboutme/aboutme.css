@@ -41,6 +41,7 @@
 .aboutme-socials {
   flex: 8;
   font-size: 0.25rem;
+  text-decoration: none;
 }
 
 .aboutme-socials > ul {
@@ -48,6 +49,11 @@
   margin-right: 5rem;
   list-style-type: none;
   font-size: 0.25rem;
+  text-decoration: none;
+}
+
+.Link{
+  text-decoration-style: none;
 }
 
 .aboutme-button {
@@ -68,4 +74,21 @@
     z-index: 1;
     transform: scale(1.2);
     left: 24%
+}
+
+.experience-bubbles{
+flex-direction: row;
+}
+
+@media screen and (max-width: 480px) {
+  .aboutme {
+    flex-direction: column;
+    gap: 7rem;
+    height: 64rem;
+  }
+
+  .aboutme-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
 }

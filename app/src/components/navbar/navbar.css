@@ -53,7 +53,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .n-list {
+  .nav-list {
     display: none;
   }
 }
