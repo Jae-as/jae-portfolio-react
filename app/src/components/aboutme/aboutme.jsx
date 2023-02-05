@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <div className="aboutme">
+    <div className="aboutme" id="AboutMe">
       <div className="aboutme-left">
         <div className="aboutme-name">
           <span>Janaeé Wallace</span>

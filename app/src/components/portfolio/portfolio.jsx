@@ -12,7 +12,7 @@ import "swiper/css";
 
 const Portfolio = () => {
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio" id="Portfolio">
       <span>Portfolio</span>
       <span>Check out my most recent projects below!</span>
 

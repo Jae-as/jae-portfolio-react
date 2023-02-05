@@ -8,7 +8,7 @@ import CurrentResume from "../../assets/docs/Resume_JanaeeWallace-20230205.pdf";
 
 const Resume = () => {
   return (
-    <div className="resume">
+    <div className="resume" id="Resume">
       <div className="resume-left">
         <span>Learn more about me &</span>
         <span>my experiences</span>

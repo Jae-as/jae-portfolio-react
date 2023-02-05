@@ -1,5 +1,6 @@
 import React from "react";
-import './navbar.css';
+import "./navbar.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -10,13 +11,33 @@ const Navbar = () => {
       <div className="nav-right">
         <div className="nav-list">
           <ul>
-            {/* <li>Home</li> */}
-            <li>About Me</li>
-            <li>Resume</li>
-            <li>Portfolio</li>
+            <li>
+              <Link activeClass="active" to="AboutMe" spy={true} smooth={true}>
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" to="Resume" spy={true} smooth={true}>
+                Resume
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="Portfolio"
+                spy={true}
+                smooth={true}
+              >
+                Portfolio
+              </Link>
+            </li>
           </ul>
         </div>
-        <button className="button">Contact Me</button>
+        <button className="button">
+          <Link activeClass="active" to="Contact" spy={true} smooth={true}>
+            Contact Me
+          </Link>
+        </button>
       </div>
     </nav>
   );

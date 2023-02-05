@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form" id="contact">
+    <div className="contact-form" id="Contact">
       <div className="contact-left">
         <span>I'm excited to work with you!</span>
         <br />
