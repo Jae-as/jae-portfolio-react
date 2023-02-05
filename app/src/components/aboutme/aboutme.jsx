@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="aboutme-left">
         <div className="aboutme-name">
           <span>Janaeé Wallace</span>
-          <span>Technical Product Manager & Fullstack Developer</span>
+          <span>Technical Product Manager, Fullstack Developer, Technology Consultant and aspiring Solution Architect</span>
           <span>Small about me profile text UPDATE LATER</span>
         </div>
         <div className="aboutme-socials">
