@@ -17,19 +17,18 @@ const Resume = () => {
           I have strong skills and interests in digital strategy, product
           management, <br />
           solution architecture, product performance analytics, and product
-          investment strategy.
-          <br /> I believe that I can help bridge the gap between emerging
-          technologies and business strategies,
-          <br /> customer experiences, and employee experiences to drive value
-          creation and growth at start-ups <br />
-          and private equity backed entities.
+          investment <br /> strategy. I believe that I can help bridge the gap
+          between emerging technologies <br />
+          and business strategies, customer experiences, and employee
+          experiences to <br /> drive value creation and growth at start-ups and
+          private equity backed entities.
         </span>
         <a href={CurrentResume} download>
           <button className="button resume-button">Download Resume</button>
         </a>
       </div>
       <div className="resume-right">
-        <div style={{ left: "2rem" }}>
+        <div style={{ left: ".05rem" }}>
           <Card
             image={Requirements}
             heading={"Technical Product Manager"}
@@ -38,7 +37,7 @@ const Resume = () => {
             }
           />
         </div>
-        <div style={{ left: "30rem" }}>
+        <div style={{ left: "25.5rem" }}>
           <Card
             image={Build}
             heading={"FulLStack Developer"}
@@ -47,7 +46,7 @@ const Resume = () => {
             }
           />
         </div>
-        <div style={{ left: "12rem", top: "12rem" }}>
+        <div style={{ left: "13rem", top: "12rem" }}>
           <Card
             image={Consultant}
             heading={"Technology Consultant"}
