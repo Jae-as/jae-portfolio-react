@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+
+  const [active, setActive] = useState(false);
+
+  const navClick = () => {
+    setActive(!active);
+  }
+
   return (
     <nav className="nav-wrapper">
       <div className="nav-left">
@@ -12,7 +19,7 @@ const Navbar = () => {
         <div className="nav-list">
           <ul>
             <li>
-              <Link activeClass="active" to="AboutMe" spy={true} smooth={true}>
+              <Link activeClass="active" to="AboutMe" spy={true} smooth={true} onClick={navClick} style={{color: active? "var(--black)": "var(--aqua)"}}>
                 About Me
               </Link>
             </li>

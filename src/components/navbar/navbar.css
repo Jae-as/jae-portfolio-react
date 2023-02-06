@@ -50,6 +50,13 @@
 
 .nav-list > ul :hover {
   cursor: default;
+  color: var(--aqua);
+}
+
+.nav-list > ul.active {
+  cursor: default;
+  color: var(--aqua);
+  text-shadow: .05rem .05rem .08rem var(--aqua);
 }
 
 .nav-button {
