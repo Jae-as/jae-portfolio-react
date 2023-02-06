@@ -3,12 +3,11 @@ import "./navbar.css";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const [active, setActive] = useState("");
 
-  const [active, setActive] = useState(false);
-
-  const navClick = () => {
-    setActive(!active);
-  }
+  // const navClick = () => {
+  //   setActive(!active);
+  // };
 
   return (
     <nav className="nav-wrapper">
@@ -19,12 +18,30 @@ const Navbar = () => {
         <div className="nav-list">
           <ul>
             <li>
-              <Link activeClass="active" to="AboutMe" spy={true} smooth={true} onClick={navClick} style={{color: active? "var(--black)": "var(--aqua)"}}>
+              <Link
+                activeClass="active"
+                to="AboutMe"
+                spy={true}
+                smooth={true}
+                onClick={() => setActive("AboutMe")}
+                style={{
+                  color: active === "AboutMe" ? "var(--aqua)" : "var(--black)",
+                }}
+              >
                 About Me
               </Link>
             </li>
             <li>
-              <Link activeClass="active" to="Resume" spy={true} smooth={true}>
+              <Link
+                activeClass="active"
+                to="Resume"
+                spy={true}
+                smooth={true}
+                onClick={() => setActive("Resume")}
+                style={{
+                  color: active === "Resume" ? "var(--aqua)" : "var(--black)",
+                }}
+              >
                 Resume
               </Link>
             </li>
@@ -34,6 +51,11 @@ const Navbar = () => {
                 to="Portfolio"
                 spy={true}
                 smooth={true}
+                onClick={() => setActive("Potfolio")}
+                style={{
+                  color:
+                    active === "Portfolio" ? "var(--aqua)" : "var(--black)",
+                }}
               >
                 Portfolio
               </Link>
