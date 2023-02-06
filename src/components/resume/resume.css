@@ -1,65 +1,74 @@
-.resume{
-    padding: 0 3rem 0 3rem;
-    display: flex;
-    height: 30vh;
-    margin-bottom: 8rem;
-    margin-top: 3rem;
-    margin-bottom: 15rem;
+.resume {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 30vh;
+  margin-bottom: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 15rem;
 }
 
-.resume-left{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.anchor {
+  font-size: 5rem;
+  color: white;
+  margin-top: 0rem;
 }
 
-.resume-left > :nth-child(1){
-    color: var(--black);
-    font-size: 2rem;
+.resume-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 5rem;
 }
 
-.resume-left > :nth-child(2){
-    color: var(--aqua);
-    font-size: 2rem;
-    font-weight: bold;
+.resume-left > :nth-child(1) {
+  color: var(--black);
+  font-size: 2rem;
 }
 
-.resume-left > :nth-child(3){
-    color: var(--gray);
-    font-size: .9rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+.resume-left > :nth-child(2) {
+  color: var(--aqua);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.resume-button{
-    width: 10rem;
-    height: 2rem;
-    font-size: .75rem;
+.resume-left > :nth-child(3) {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.resume-right{
-    position: relative;
+.resume-button {
+margin-top: 1rem;
+  width: 10rem;
+  height: 2rem;
+  font-size: 0.75rem;
 }
 
-.resume-right>*{
-    position: absolute;
+.resume-right {
+    margin-top: 5rem;
+  position: relative;
+}
+
+.resume-right > * {
+  position: absolute;
 }
 
 @media screen and (max-width: 480px) {
-    .resume {
-      margin-top: 0;
-      flex-direction: column;
-      gap: 5rem;
-      height: 66rem;
-      padding: 0;
-    }
-  
-    .resume-right {
-      display: flex;
-      flex-direction: column;
-      gap: 17rem;
-    }
-    .resume-right > * {
-      position: static;
-    }
+  .resume {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
   }
+
+  .resume-right {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+  .resume-right > * {
+    position: static;
+  }
+}

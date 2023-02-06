@@ -7,6 +7,7 @@ const AboutMe = () => {
   return (
     <div className="aboutme" id="AboutMe">
       <div className="aboutme-left">
+      <div className="anchor">ABOUT ME</div>
         <div className="aboutme-name">
           <span>Janaeé Wallace</span>
           <span>
@@ -49,7 +50,6 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="aboutme-right">
-        {" "}
         <img src={PortfolioHeadshot} alt="portfolioheadshot"></img>{" "}
       </div>
     </div>
