@@ -5,21 +5,29 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [active, setActive] = useState("");
 
-  // const navClick = () => {
-  //   setActive(!active);
-  // };
-
   return (
     <nav className="nav-wrapper">
       <div className="nav-left">
-        <div className="dev-name">Janaeé Wallace</div>
+        <div>
+          <Link
+            className="dev-name"
+            to="Navbar"
+            spy={true}
+            smooth={true}
+            onClick={() => setActive("")}
+            style={{
+              color: active === "Navbar" ? "var(--black)" : "var(--black)",
+            }}
+          >
+            Janaeé Wallace
+          </Link>
+        </div>
       </div>
       <div className="nav-right">
         <div className="nav-list">
           <ul>
             <li>
               <Link
-                activeClass="active"
                 to="AboutMe"
                 spy={true}
                 smooth={true}
@@ -33,7 +41,6 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                activeClass="active"
                 to="Resume"
                 spy={true}
                 smooth={true}
@@ -47,11 +54,10 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                activeClass="active"
                 to="Portfolio"
                 spy={true}
                 smooth={true}
-                onClick={() => setActive("Potfolio")}
+                onClick={() => setActive("Portfolio")}
                 style={{
                   color:
                     active === "Portfolio" ? "var(--aqua)" : "var(--black)",
