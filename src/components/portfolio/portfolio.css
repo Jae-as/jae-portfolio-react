@@ -38,14 +38,19 @@
   border-radius: 1rem;
 }
 
-.portfolio h4{
-    color: var(--aqua);
-    font-size: 1.25rem;
-    margin-bottom: 0.25rem;
+.portfolio h4 {
+  color: var(--aqua);
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
 }
 
-.portfolio li{
-    list-style-type: none;
-    margin-top: 0rem;
-    cursor: default;
+.portfolio li {
+  list-style-type: none;
+  margin-top: 0rem;
+  cursor: default;
+}
+
+.portfolio li:hover {
+  color: var(--aqua);
+  cursor: default;
 }

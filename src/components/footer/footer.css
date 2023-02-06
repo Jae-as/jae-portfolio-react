@@ -28,6 +28,11 @@
     gap: 2rem;
 }
 
+.footer-icons:hover{
+    color: var(--var);
+    cursor: default;
+}
+
 @media screen and (max-width: 480px){
     .footer-content{
       transform: scale(.5);

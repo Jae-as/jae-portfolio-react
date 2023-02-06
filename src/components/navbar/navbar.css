@@ -49,7 +49,6 @@
 }
 
 .nav-list > ul :hover {
-  color: var(--aqua);
   cursor: default;
 }
 

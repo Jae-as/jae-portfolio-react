@@ -1,9 +1,14 @@
 import React from "react";
 import "./aboutme.css";
 import PortfolioHeadshot from "../../assets/images/portfolioheadshot.png";
-import { Link } from "react-router-dom";
+
 
 const AboutMe = () => {
+
+  const openGithub = () =>{window.open("https://github.com/Jae-as")};
+  const openLinkedIn = () => {window.open("https://www.linkedin.com/in/janaeewallace/")};
+
+
   return (
     <div className="aboutme" id="AboutMe">
       <div className="aboutme-left">
@@ -40,12 +45,8 @@ const AboutMe = () => {
         </div>
         <div className="aboutme-socials">
           <ul>
-            <Link to="https://www.linkedin.com/in/janaeewallace/">
-              <li className="button aboutme-button">LinkedIn</li>
-            </Link>
-            <Link to="https://github.com/Jae-as">
-              <li className="button aboutme-button">GitHub</li>
-            </Link>
+              <li className="button aboutme-button" onClick={openLinkedIn}>LinkedIn</li>
+              <li className="button aboutme-button" onClick={openGithub}>GitHub</li>
           </ul>
         </div>
       </div>
