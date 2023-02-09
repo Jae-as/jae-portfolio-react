@@ -79,7 +79,7 @@ const Contact = () => {
             className="user"
             placeholder="Name"
             onBlur={handleChange}
-            value={name}
+            // value={name}
           />
           <input
             required
@@ -88,14 +88,14 @@ const Contact = () => {
             className="user"
             placeholder="Email"
             onBlur={handleChange}
-            value={email}
+            // value={email}
           />
           <textarea
             name="message"
             className="user"
             placeholder="Message"
             onBlur={handleChange}
-            value={message}
+            // value={message}
           />
           <input type="submit" value="Send" className="button" />
           <span>{done && "Thanks for Contacting me"}</span>
