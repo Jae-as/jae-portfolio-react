@@ -57,16 +57,16 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ***
 ###### [Back to Table of Contents](#Table-of-Contents)
 The following images show the web application's appearance:
-![Portfolio Image 1](./images/notetaker1.png)
-![Portfolio Image 2](./images/notetaker2.png)
-![Portfolio Image 3](./images/notetaker1.png)
-![Portfolio Image 4](./images/notetaker2.png)
-![Portfolio Image 5](./images/notetaker2.png)
+![Portfolio Image 1 - About Me](./images/portfolio-aboutme.png)
+![Portfolio Image 2 - Resume](./images/portfolio-resume.png)
+![Portfolio Image 3 - Portfolio](./images/portfolio-portfolio.png)
+![Portfolio Image 4 - Contact Me](./images/portfolio-contactme.png)
+![Portfolio Image 5 - Footer](./images/portfolio-footer.png)
 
 
 ## Deployed Heroku Application
 ***
-
+https://murmuring-meadow-33497.herokuapp.com/
 
 ## Credits
 ***
