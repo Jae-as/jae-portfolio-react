@@ -17,7 +17,7 @@ const Experiences = () => {
       <div className="achievement">
         <div className="circle">4+</div>
         <span>angel</span>
-        <span>Invesrments</span>
+        <span>Investments</span>
       </div>
     </div>
   );

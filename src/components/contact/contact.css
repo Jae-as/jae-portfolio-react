@@ -60,3 +60,9 @@ textarea{
     }
 
 }  
+
+.error-message{
+    color: red;
+    text-transform: uppercase;
+    display: flex;
+}

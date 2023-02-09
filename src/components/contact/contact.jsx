@@ -2,8 +2,39 @@ import React, { useRef, useState } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 import mail from "../../assets/images/mail.gif";
+import {validateEmail} from "../../utils/helpers";
 
 const Contact = () => {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errorMessage, setErrorMessage] = useState("");
+  const { name, email, message } = formState;
+
+  const handleChange = (e) => {
+    if (e.target.name === "user_email") {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage("Your email is invalid.");
+      } else {
+        setErrorMessage("");
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log("Handle Form", formState);
+    }
+  };
+
   const form = useRef();
   const [done, setDone] = useState(false);
   const sendEmail = (e) => {
@@ -17,7 +48,7 @@ const Contact = () => {
         form.current,
         "jslpxXfOWfi00vLAd"
       )
-      .the(
+      .then(
         (result) => {
           console.log(result.text);
           setDone(true);
@@ -40,21 +71,32 @@ const Contact = () => {
       </div>
       <div className="contact-right">
         <form ref={form} onSubmit={sendEmail}>
+        <div className="error-message"> {errorMessage} </div>  
           <input
             required
             type="text"
-            name="user_name"
+            name="name"
             className="user"
             placeholder="Name"
+            onBlur={handleChange}
+            value={name}
           />
           <input
             required
             type="email"
-            name="user_email"
+            name="email"
             className="user"
             placeholder="Email"
+            onBlur={handleChange}
+            value={email}
           />
-          <textarea name="message" className="user" placeholder="Message" />
+          <textarea
+            name="message"
+            className="user"
+            placeholder="Message"
+            onBlur={handleChange}
+            value={message}
+          />
           <input type="submit" value="Send" className="button" />
           <span>{done && "Thanks for Contacting me"}</span>
         </form>
